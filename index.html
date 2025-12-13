@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TuteDude – HTML Learning Demo Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <!-- ================= HEADER SECTION ================= -->
+    <header>
+        <h1>Welcome to <mark>TuteDude</mark></h1>
+
+        <p>
+            <em>Learn smartly</em> and <strong>build your future</strong> with our easy-to-follow courses.
+        </p>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#trivia">Trivia</a></li>
+                <li><a href="#extras">Extras</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+        </nav>
+
+        <figure>
+            <img src="https://via.placeholder.com/800x300" alt="TuteDude Learning Platform">
+            <figcaption>Empowering students through modern learning</figcaption>
+        </figure>
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+
+        <!-- ========== ABOUT SECTION ========== -->
+        <section id="about">
+            <h2>About TuteDude</h2>
+
+            <article>
+                <p>
+                    <strong>TuteDude</strong> is an online learning platform founded in 
+                    <time datetime="2020">2020</time> that focuses on skill-based education.
+                    We provide courses in programming, design, and career development.
+                </p>
+
+                <p>
+                    The term <abbr title="HyperText Markup Language">HTML</abbr> is one of the
+                    foundational skills taught at TuteDude.
+                </p>
+            </article>
+
+            <blockquote>
+                "Learning never exhausts the mind."
+                <cite>– Leonardo da Vinci</cite>
+            </blockquote>
+        </section>
+
+        <!-- ========== MENU SECTION ========== -->
+        <section id="menu">
+            <h2>Course Menu</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Duration</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>HTML Basics</td>
+                        <td>4 Weeks</td>
+                        <td>
+                            <table border="1">
+                                <tr>
+                                    <td>Beginner Friendly</td>
+                                    <td>Hands-on Practice</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>CSS Mastery</td>
+                        <td>6 Weeks</td>
+                        <td>
+                            <table border="1">
+                                <tr>
+                                    <td>Layouts</td>
+                                    <td>Animations</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="3">More courses coming soon!</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- ========== TRIVIA SECTION ========== -->
+        <section id="trivia">
+            <h2>Did You Know?</h2>
+
+            <aside>
+                <details>
+                    <summary>Interesting HTML Fact</summary>
+                    <p>
+                        HTML was first released in <strong>1993</strong> by Tim Berners-Lee.
+                    </p>
+                </details>
+            </aside>
+        </section>
+
+        <!-- ========== EXTRAS SECTION ========== -->
+        <section id="extras">
+            <h2>Extras</h2>
+
+            <h3>Audio Learning</h3>
+            <audio controls>
+                <source src="sample-audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h3>Video Learning</h3>
+            <video width="320" height="240" controls>
+                <source src="sample-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <!-- ========== FEEDBACK FORM ========== -->
+        <section id="feedback">
+            <h2>Feedback Form</h2>
+
+            <form>
+                <fieldset>
+                    <legend>User Feedback</legend>
+
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="course">Course Interested In:</label><br>
+                    <select id="course" name="course">
+                        <option>HTML</option>
+                        <option>CSS</option>
+                        <option>JavaScript</option>
+                    </select><br><br>
+
+                    <label for="message">Your Message:</label><br>
+                    <textarea id="message" name="message" rows="4"></textarea><br><br>
+
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <address>
+            Contact us at: <a href="mailto:support@tutedude.com">support@tutedude.com</a>
+        </address>
+
+        <p>
+            © <time datetime="2025">2025</time> TuteDude. All rights reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
