@@ -1,244 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Welcome to TuteDude</title>
-  <style>
-body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-  line-height: 1.6;
-}
-
-.highlight {
-  background-color: yellow;
-}
-
-nav ul {
-  list-style: disc;
-  padding-left: 1.2rem;
-  margin: 0;
-}
-
-nav ul li {
-  margin: 4px 0;
-}
-
-nav ul li::marker {
-  color: blue;
-}
-
-nav ul li a {
-  color: blue;
-  text-decoration: underline;
-}
-
-.banner {
-  display: block;
-  max-width: 300px;
-}
-
-.banner img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.caption {
-  display: block;
-  margin: 6px 0 0 0;
-  padding: 0;
-  background: transparent;
-  color: #222;
-  font-size: 13px;
-  text-align: left;
-}
-
-@media (max-width: 480px) {
-  .banner {
-    max-width: 100%;
-  }
-  .caption {
-    text-align: left;
-    font-size: 13px;
-  }
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px;
-}
-
-table, th, td {
-  border: 1px solid black;
-}
-
-th, td {
-  padding: 8px;
-  text-align: center;
-}
-
-/* small inner tables for nutrition facts */
-.inner {
-  width: auto;
-  border-collapse: collapse;
-  margin-top: 6px;
-  font-size: 11px;
-}
-
-.inner th, .inner td {
-  border: 1px solid #000;
-  padding: 3px 6px;
-  text-align: left;
-  font-size: 11px;
-}
-
-.mini-table { margin-top: 6px; }
-
-
-hr {
-  margin: 25px 0;
-}
-
-fieldset {
-  margin-bottom: 15px;
-}
-
-button {
-  padding: 5px 15px;
-  cursor: pointer;
-}
-
-/* Menu table */
-.menu-table {
-  width: 720px; /* fixed display width to match screenshot */
-  max-width: 95%;
-  margin: 10px 0 10px 20px; /* align to left with left margin */
-  border-collapse: collapse;
-  font-size: 13px; /* slightly smaller text */
-  table-layout: fixed;
-}
-
-.menu-table, .menu-table th, .menu-table td {
-  border: 1px solid #000;
-}
-
-.menu-table th, .menu-table td {
-  padding: 6px; /* reduced padding for compactness */
-  text-align: center;
-  vertical-align: middle;
-}
-
-.menu-table td:nth-child(2) {
-  text-align: left; /* Type column left-aligned */
-}
-
-.menu-table th[colspan="6"] {
-  font-size: 16px;
-  font-weight: 700;
-  padding: 8px 6px;
-  text-align: center;
-}
-
-.menu-table .mini-table { display: inline-block; vertical-align: top; margin-top:6px; }
-
-@media (max-width: 760px) {
-  .menu-table { width: 100%; margin-left:0; }
-  .menu-table td, .menu-table th { font-size: 12px; padding:4px; }
-  .inner th, .inner td { font-size: 10px; padding:2px 4px; }
-}
-
-/* Add a small bullet in front of select page sections */
-.section-bullet {
-  display: inline-block;
-  width: 1.1em;
-  color: #333;
-  font-weight: 700;
-  margin-right: 0.4rem;
-  font-size: 1.1em;
-  line-height: 1;
-}
-  </style>
-</head> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TuteDude</title>
+</head>
 <body>
 
-  <header>
-    <h1>🌮 Welcome to <span class="highlight">TuteDude</span> 🌮</h1>
-    <p>A project designed by <strong>TuteDude</strong> to learn HTML</p>
-    <p>Best TuteDude in town since 2021</p>
+  <!-- =====================
+       HEADER
+  ====================== -->
+  <h1 id="top">🌮 Welcome to <mark>TuteDude</mark> 🌮</h1>
 
-    <nav>
-      <ul>
-        <li><a href="#about">About TD</a></li>
-        <li><a href="#menu">Our Menu</a></li>
-        <li><a href="#trivia">Taco Trivia</a></li>
-        <li><a href="#extras">Extras</a></li>
-        <li><a href="#feedback">Feedback Form</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <p><i>A project designed by <strong>TuteDude</strong> to learn HTML</i></p>
 
-  <section class="banner">
-    <img src="https://images.shiksha.com/mediadata/images/articles/1739779901phpxOdKq8.jpeg" alt="TuteDude Course">
-    <p class="caption">TuteDude and a Drink</p>
-  </section>
+  <p>Best TuteDude in town since 2021</p>
 
-  <hr>
+  <!-- Navigation -->
+  <ul>
+    <li><a href="#about">About TD</a></li>
+    <li><a href="#menu">Our Menu</a></li>
+    <li><a href="#trivia">Taco Trivia</a></li>
+    <li><a href="#extras">Extras</a></li>
+    <li><a href="#feedback">Feedback Form</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <h2>About TD</h2>
-    <p>
-      TD was founded in 2021. This demo project was created by <strong>TuteDude</strong> for learning all major HTML tags 🌮. <br>
-      level up your career with expert mentorship & internships for FREE
+  <!-- Hero Image -->
+  <figure>
+    <img
+      src="https://images.shiksha.com/mediadata/images/articles/1739779901phpxOdKq8_480x360.jpeg"
+      alt="TuteDude Course"
+      width="490"
+      height="310"
+    />
+    <figcaption>TuteDude and a Drink</figcaption>
+  </figure>
 
+  <hr />
 
-    </p>
-    <a href="#">↑ Back to Top</a>
-  </section>
+  <!-- =====================
+       ABOUT TD
+  ====================== -->
+  <h2 id="about">About <abbr title="TuteDude">TD</abbr></h2>
 
-  <hr>
+  <p><abbr title="TuteDude">TD</abbr> was founded in 2021. This demo project was created by <strong>TuteDude</strong> for learning all major HTML tags 🌮.</p>
 
-  <!-- MENU -->
-  <section id="menu">
-    <table class="menu-table">
-      <colgroup>
-        <col style="width:18%;">
-        <col style="width:34%;">
-        <col style="width:8%;">
-        <col style="width:10%;">
-        <col style="width:8%;">
-        <col style="width:12%;">
-      </colgroup>
+  <blockquote>Level up your career with expert mentorship &amp; internships for FREE</blockquote>
+
+  <br />
+  <a href="#top">↑ Back to Top</a>
+  <hr />
+
+  <!-- =====================
+       OUR MENU
+  ====================== -->
+  <h2 id="menu">Our Menu</h2>
+
+  <table border="1" cellpadding="6" cellspacing="0">
+    <caption><strong>TuteDude Complete Taco Menu</strong></caption>
+    <thead>
       <tr>
-        <th colspan="6">TuteDude Complete Taco Menu</th>
+        <th rowspan="2">Category</th>
+        <th rowspan="2">Type</th>
+        <th colspan="2"><i>Small Portion</i></th>
+        <th colspan="2"><i>Large Portion</i></th>
       </tr>
       <tr>
-        <th>Category</th>
-        <th>Type</th>
-        <th colspan="2">Small Portion</th>
-        <th colspan="2">Large Portion</th>
-      </tr>
-      <tr>
-        <th></th>
-        <th></th>
         <th>Qty</th>
         <th>Price</th>
         <th>Qty</th>
         <th>Price</th>
       </tr>
+    </thead>
 
+    <tbody>
+      <!-- TuteDude rows -->
       <tr>
-        <td rowspan="3">TuteDude</td>
+        <td rowspan="3"><strong>TuteDude</strong></td>
         <td>Crunchy (Beef)</td>
         <td>1</td>
         <td>$1.50</td>
         <td>3</td>
         <td>$3.25</td>
       </tr>
-
       <tr>
         <td>Crunchy (Chicken)</td>
         <td>1</td>
@@ -246,18 +91,16 @@ button {
         <td>3</td>
         <td>$3.50</td>
       </tr>
-
       <tr>
         <td>
-          Crunchy (Veggie)
-          <div class="mini-table">
-            <table class="inner">
-              <tr><th>Nutrient</th><th>Value</th></tr>
-              <tr><td>Calories</td><td>150 kcal</td></tr>
-              <tr><td>Protein</td><td>5 g</td></tr>
-              <tr><td>Fiber</td><td>4 g</td></tr>
-            </table>
-          </div>
+          Crunchy (Veggie)<br />
+          <i>Nutrition Info</i><br />
+          <table border="1" cellpadding="3" cellspacing="0">
+            <tr><th>Nutrient</th><th>Value</th></tr>
+            <tr><td>Calories</td><td>150 kcal</td></tr>
+            <tr><td>Protein</td><td>5 g</td></tr>
+            <tr><td>Fiber</td><td>4 g</td></tr>
+          </table>
         </td>
         <td>1</td>
         <td>$1.25</td>
@@ -265,8 +108,9 @@ button {
         <td>$3.00</td>
       </tr>
 
+      <!-- Soft TuteDude rows -->
       <tr>
-        <td rowspan="2">Soft TuteDude</td>
+        <td rowspan="2"><strong>Soft TuteDude</strong></td>
         <td>Soft (Beef)</td>
         <td>2</td>
         <td>$3.50</td>
@@ -281,29 +125,31 @@ button {
         <td>$5.50</td>
       </tr>
 
+      <!-- Combos rows -->
       <tr>
-        <td rowspan="2">Combos</td>
+        <td rowspan="2"><strong>Combos</strong></td>
         <td>2 Crunchy + Drink</td>
         <td colspan="2">$4.50</td>
-        <td colspan="2"></td>
+        <td colspan="2">N/A</td>
       </tr>
       <tr>
-        <td>2 Soft + Drink
-          <div class="mini-table">
-            <table class="inner">
-              <tr><th>Item</th><th>Calories</th><th>Sugar</th></tr>
-              <tr><td>Soft Taco</td><td>200 kcal</td><td>2 g</td></tr>
-              <tr><td>Drink</td><td>120 kcal</td><td>25 g</td></tr>
-              <tr><td><strong>Total</strong></td><td>320 kcal</td><td>27 g</td></tr>
-            </table>
-          </div>
+        <td>
+          2 Soft + Drink<br />
+          <i>Combo Meals Nutrition<br />Facts</i><br />
+          <table border="1" cellpadding="3" cellspacing="0">
+            <tr><th>Item</th><th>Calories</th><th>Sugar</th></tr>
+            <tr><td>Soft Taco</td><td>200 kcal</td><td>2 g</td></tr>
+            <tr><td>Drink</td><td>120 kcal</td><td>25 g</td></tr>
+            <tr><td><strong>Total</strong></td><td><strong>320 kcal</strong></td><td><strong>27 g</strong></td></tr>
+          </table>
         </td>
         <td colspan="2">$5.00</td>
         <td colspan="2">N/A</td>
       </tr>
 
+      <!-- Extras rows -->
       <tr>
-        <td rowspan="2">Extras</td>
+        <td rowspan="2"><strong>Extras</strong></td>
         <td>Chips &amp; Salsa</td>
         <td colspan="2">$2.00</td>
         <td colspan="2"></td>
@@ -313,88 +159,116 @@ button {
         <td colspan="2">$1.50</td>
         <td colspan="2"></td>
       </tr>
+    </tbody>
 
+    <tfoot>
       <tr>
         <td colspan="6"><strong>Average Meal Price Range: $2.00 – $6.50</strong></td>
       </tr>
-    </table>
+    </tfoot>
+  </table>
 
-    <p><a href="#">↑ Back to Top</a></p>
-  </section>
+  <br />
+  <a href="#top">↑ Back to Top</a>
+  <hr />
 
-  <hr>
+  <!-- =====================
+       TACO TRIVIA
+  ====================== -->
+  <h2 id="trivia">Taco Trivia</h2>
 
-  <!-- TRIVIA -->
-  <section id="trivia">
-    <h2>Taco Trivia</h2>
-    <p>▶ When did TuteDude first appear in the United States?</p>
-  </section>
+  <details>
+    <summary>When did TuteDude first appear in the United States?</summary>
+    <p>TuteDude first appeared in the United States in 2021!</p>
+  </details>
 
-  <hr>
+  <hr />
 
-  <!-- MEDIA -->
-  <section id="media">
-    <h2>Media Fun</h2>
+  <!-- =====================
+       MEDIA FUN
+  ====================== -->
+  <h2 id="extras">Media Fun</h2>
 
-    <h3>Listen to Taco Music</h3>
-    <audio controls>
-      <source src="" type="audio/mpeg">
-    </audio>
+  <h3><strong>Listen to Taco Music</strong></h3>
+  <audio controls>
+    <source src="taco-music.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
 
-    <h3>Watch Taco Video</h3>
-    <video width="400" controls>
-      <source src="" type="video/mp4">
-    </video>
-  </section>
+  <br /><br />
 
-  <hr>
+  <h3><strong>Watch Taco Video</strong></h3>
+  <video width="390" controls>
+    <source src="taco-video.mp4" type="video/mp4" />
+    Your browser does not support the video element.
+  </video>
 
-  <!-- FEEDBACK -->
-  <section id="feedback">
-    <h2>Give Us Your Feedback</h2>
+  <hr />
 
-    <form>
-      <fieldset>
-        <legend>Your Info</legend>
+  <!-- =====================
+       FEEDBACK FORM
+  ====================== -->
+  <h2 id="feedback">Give Us Your Feedback</h2>
 
-        <label>Name:</label>
-        <input type="text"><br><br>
+  <form action="#" method="post">
 
-        <label>Email:</label>
-        <input type="email"><br><br>
+    <fieldset>
+      <legend>Your Info</legend>
 
-        <label>Favorite Taco:</label>
-        <select>
-          <option>Crunchy</option>
-          <option>Soft</option>
-          <option>Veggie</option>
-        </select>
-      </fieldset>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" />
+      <br /><br />
 
-      <fieldset>
-        <legend>Your Message</legend>
-        <textarea rows="4"></textarea>
-      </fieldset>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+      <br /><br />
 
-      <button type="submit">Submit</button>
-    </form>
-  </section>
+      <label for="taco">Favorite Taco:</label>
+      <select id="taco" name="taco">
+        <option value="crunchy">Crunchy</option>
+        <option value="soft">Soft</option>
+        <option value="veggie">Veggie</option>
+      </select>
 
-  <hr>
+    </fieldset>
 
-  <!-- CONTACT -->
-  <footer id="contact">
-    <h2>Contact Us</h2>
-    <p>
-      <strong>TuteDude</strong><br>
-      123 Taco Street<br>
-      Taco Town, TX 75000<br>
-      <a href="mailto:info@tutedude.com">info@tutedude.com</a>
-    </p>
+    <br />
 
-    <p>© 2025 TuteDude. All rights reserved.</p>
+    <fieldset>
+      <legend>Your Message</legend>
+
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message" rows="5" cols="40"></textarea>
+
+    </fieldset>
+
+    <br />
+    <input type="submit" value="Submit" />
+
+  </form>
+
+  <hr />
+
+  <!-- =====================
+       CONTACT
+  ====================== -->
+  <h2 id="contact">Contact Us</h2>
+
+  <address>
+    TuteDude<br />
+    123 Taco Street<br />
+    Taco Town, TX 75000<br />
+    <a href="mailto:info@tutedude.com">info@tutedude.com</a>
+  </address>
+
+  <hr />
+
+  <!-- =====================
+       FOOTER
+  ====================== -->
+  <footer>
+    <p>&copy; 2025 TuteDude. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
